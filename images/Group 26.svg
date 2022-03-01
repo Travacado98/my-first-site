@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="243" height="51" viewBox="0 0 243 51">
+  <g id="Group_26" data-name="Group 26" transform="translate(-40 -25)">
+    <text id="CumStore" transform="translate(95 63)" fill="#3f4952" font-size="36" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">CumStore</tspan></text>
+    <g id="Group_25" data-name="Group 25" transform="translate(38.016 26)">
+      <path id="Path_1" data-name="Path 1" d="M1.984,29.29a17.21,17.21,0,0,1,17.21-17.21V29.29Z" fill="#442781"/>
+      <path id="Path_2" data-name="Path 2" d="M1.984,29.29A17.21,17.21,0,0,0,19.194,46.5V29.29Z" fill="#61459c"/>
+      <path id="Path_3" data-name="Path 3" d="M36.4,29.29A17.21,17.21,0,0,1,19.194,46.5V29.29Z" fill="#a992db"/>
+      <path id="Path_4" data-name="Path 4" d="M47.016,14.422A12.922,12.922,0,0,1,34.093,27.344H21.172V14.422a12.922,12.922,0,1,1,25.844,0Z" fill="#ff7917"/>
+    </g>
+  </g>
+</svg>
