@@ -117,6 +117,7 @@ html {
   background-color: var(--cum);
   width: 100vw;
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 .website {
@@ -128,6 +129,16 @@ html {
   max-width: 1320px;
   padding: 0 20px;
   margin: 180px auto 0 auto;
+}
+
+button {
+  background-color: var(--cum);
+  color: #3f4952;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 13px 30px;
+  border: none;
+  font-weight: bold;
 }
 
 // Main body
@@ -150,7 +161,7 @@ html {
     @media ($mobile) {
       font-size: 32px;
     }
-
+    line-height: 1.1;
     font-size: 50px;
   }
 
@@ -179,15 +190,7 @@ html {
       margin-top: 10px;
       margin-bottom: 20px;
     }
-
-    background-color: var(--cum);
-    color: #3f4952;
-    border-radius: 15px;
-    box-shadow: 0px 3px 6px #00000029;
-    padding: 13px 30px;
-    margin-top: 50px;
-    border: none;
-    font-weight: bold;
+    margin-top: 40px;
   }
 }
 
@@ -289,32 +292,15 @@ html {
     background: #3f4952;
     color: #fcfaf4;
   }
-  button {
-    background-color: var(--cum);
-    border-radius: 15px;
-    color: #3f4952;
-    box-shadow: 0px 3px 6px #00000029;
-    padding: 13px 20px;
-    border: none;
-    font-weight: bold;
-    // display: flex;
-    align-items: center;
-    justify-content: center;
-    // width: 100%;
-    padding: 0 10px;
-    height: 35px;
-    outline: none;
-  }
 }
 
 // Footer
 
 .footer {
   @media ($mobile) {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     width: 100%;
-    padding: 20px 20px 40px;
+    padding: 20px;
     text-align: center;
   }
 
@@ -325,12 +311,8 @@ html {
   padding: 20px 40px;
 
   img {
-    height: 51px;
+    height: 50px;
     // margin: auto auto auto 40px;
-  }
-
-  p {
-    margin: none;
   }
 
   #socials {
@@ -351,6 +333,18 @@ html {
       grid-template-columns: 1fr;
       width: 100%;
       padding: 0 20px;
+    }
+
+    p {
+      @media ($mobile) {
+        margin-bottom: 20px;
+      }
+
+      margin-bottom: 0;
+    }
+
+    img {
+      margin: auto;
     }
 
     display: flex;
