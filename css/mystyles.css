@@ -357,7 +357,6 @@ template {
   opacity: 1;
 }
 
-/* Default styles */
 a,
 a:visited,
 a:hover,
@@ -366,11 +365,22 @@ a:active {
   color: inherit;
 }
 
+body,
+html {
+  color: var(--text);
+  font-family: Poppins;
+  background-color: var(--cum);
+  width: 100vw;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 100;
   padding: 0 40px;
   width: 100vw;
   height: 100px;
@@ -400,14 +410,16 @@ a:active {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.header .linka a.active {
+.header .linka a:active {
   color: var(--active);
 }
 .header img {
-  height: 50px;
+  height: 40px;
 }
 .header h4 {
   margin: 0;
+  text-decoration: underline 0.15em #ff791700;
+  transition: text-decoration-color 200ms;
 }
 @media (max-width:550px) {
   .header h4 {
@@ -415,17 +427,13 @@ a:active {
   }
 }
 .header h4:hover {
-  animation: test 2s infinite;
+  color: var(--active);
+  text-decoration-color: #ff7917ff;
+  transform: translateY(-2px);
 }
 
-body,
-html {
-  color: var(--text);
-  font-family: Poppins;
-  background-color: var(--cum);
-  width: 100vw;
-  overflow-x: hidden;
-  line-height: 1.5;
+#active {
+  color: var(--active);
 }
 
 .website {
@@ -447,6 +455,14 @@ button {
   box-shadow: 0px 3px 6px #00000029;
   padding: 13px 30px;
   border: none;
+  font-weight: bold;
+}
+button:hover {
+  animation: anime both 0.25s ease-in-out;
+}
+
+#learn {
+  color: #ff7917;
   font-weight: bold;
 }
 
@@ -521,6 +537,10 @@ button {
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 25px;
   text-align: center;
+  padding-bottom: 20px;
+}
+.types div:hover {
+  animation: anime forwards 0.25s ease;
 }
 .types img {
   padding: 40px 115px 0px 115px;
@@ -529,6 +549,18 @@ button {
 .types label {
   font-size: 12px;
   color: #b4b4b4;
+}
+
+#hot {
+  color: #ff7917 !important;
+}
+
+#cold {
+  color: #3ba7c7 !important;
+}
+
+#recycle {
+  color: #72a03f !important;
 }
 
 .info {
@@ -567,23 +599,48 @@ button {
     padding: 20px 30px 20px 30px;
   }
 }
-#formin .cumform {
+#formin .milkform {
   width: 100%;
   max-width: 600px;
   text-align: center;
 }
+#formin .milkform h1 {
+  margin: 0px;
+  font-size: 42px;
+}
+#formin .milkform p {
+  max-width: 600px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+#formin .milkform ::placeholder {
+  color: #fcfaf450;
+}
 #formin input,
 #formin select {
-  margin: 20px 0 20px 0;
   border-radius: 15px;
   border-color: #fcfaf4;
   border-style: solid;
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 10px 20px;
   height: 50px;
   background: #3f4952;
   color: #fcfaf4;
+}
+#formin .emails {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  justify-content: center;
+}
+#formin .emails button {
+  width: 100%;
+  height: 50px;
+}
+#formin .emails input {
+  width: 100%;
 }
 
 .footer {
@@ -602,7 +659,7 @@ button {
   }
 }
 .footer img {
-  height: 50px;
+  height: 40px;
 }
 .footer #socials {
   display: flex;
@@ -639,7 +696,273 @@ button {
   }
 }
 .footer #rights img {
-  margin: auto;
+  margin-left: 0px;
+}
+
+.contact {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.shoppy {
+  margin-top: 100px;
+  position: relative;
+  padding: 80px;
+}
+.shoppy .milkback {
+  left: 0;
+  top: 0;
+  filter: blur(5px);
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../images/milkbackground.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.shoppy .blackback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(63, 73, 82, 0.5);
+}
+.shoppy .shoppytext {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: grid;
+  place-items: center;
+}
+.shoppy .shoppytext h1 {
+  font-size: 50px;
+  margin: 0px;
+}
+.shoppy .shoppytext p {
+  width: 600px;
+  text-align: center;
+}
+
+.shopflavors {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+  padding-top: 80px;
+}
+.shopflavors .note {
+  position: sticky;
+  top: 20px;
+  left: 20px;
+  align-self: start;
+}
+
+.shop {
+  padding: 0px 300px;
+}
+
+.milked {
+  display: grid;
+  gap: 40px;
+  grid-template-rows: 1fr;
+}
+.milked .mflavors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 25px;
+}
+.milked .flavtext {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.milked .buy {
+  filter: grayscale(1);
+}
+.milked img {
+  padding: 106px 40px;
+  border-radius: 25px 0 0 25px;
+}
+.milked #fire {
+  background-color: #fff0e3;
+}
+.milked #ice {
+  background-color: #eafaff;
+}
+.milked #recycle {
+  background-color: #f0ffef;
+}
+
+#shoplabel {
+  font-size: 16px;
+  color: #b4b4b4;
+}
+
+#recyclegrid {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+}
+
+#hotshop {
+  color: #ff7917;
+}
+
+#coldshop {
+  color: #3ba7c7;
+}
+
+#recycleshop {
+  color: #72a03f;
+}
+
+.intromilk {
+  padding: 180px 300px 80px 300px;
+}
+
+.aboutmilk {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+.aboutmilk img {
+  max-height: 420px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.milktext {
+  justify-content: center;
+  align-items: center;
+  max-width: 620px;
+}
+
+.truth {
+  background: linear-gradient(#414951, #000000);
+  padding: 80px 300px;
+  color: white;
+}
+.truth #cow {
+  border-radius: 50px;
+  width: 100%;
+}
+.truth .abouttruth {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+  background: #3f4952;
+  color: white;
+  padding: 80px 0px;
+}
+.more p {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+@keyframes anime {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+#contactin {
+  color: var(--cum);
+  font-family: Poppins;
+  background-color: var(--text);
+  place-content: center;
+  text-align: center;
+  padding: 60px;
+  margin: 0px;
+}
+@media (max-width:550px) {
+  #contactin {
+    padding: 20px 30px 20px 30px;
+  }
+}
+#contactin h2 {
+  font-size: 42px;
+}
+#contactin #contactform {
+  display: grid;
+  padding: 0px 100px;
+  gap: 20px;
+}
+#contactin #contactform h2 {
+  margin: 0px;
+  font-size: 42px;
+}
+#contactin #contactform p {
+  max-width: 600px;
+}
+#contactin #contactform ::placeholder {
+  color: #fcfaf450;
+}
+#contactin input,
+#contactin select {
+  border-radius: 15px;
+  border-color: #fcfaf4;
+  border-style: solid;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  height: 50px;
+  background: #3f4952;
+  color: #fcfaf4;
+}
+#contactin input:focus,
+#contactin select:focus {
+  background-color: #fcfaf4;
+  outline: 0;
+  color: #3f4952;
+}
+
+#textarea {
+  height: 100px;
+  width: 100%;
+  border-radius: 15px;
+  border-color: #fcfaf4;
+  border-style: solid;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background: #3f4952;
+  color: #fcfaf4;
+  resize: none;
+}
+#textarea:focus {
+  background-color: #fcfaf4;
+  outline: 0;
+  color: #3f4952;
+}
+
+.contact {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=mystyles.css.map */

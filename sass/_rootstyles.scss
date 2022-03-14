@@ -1,0 +1,28 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: var(--cum);
+  opacity: 1;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body,
+html {
+  color: var(--text);
+  font-family: Poppins;
+  background-color: var(--cum);
+  width: 100vw;
+  overflow-x: hidden;
+  line-height: 1.5;
+}

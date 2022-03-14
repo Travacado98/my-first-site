@@ -1,0 +1,48 @@
+.flavors {
+  margin-top: 80px;
+}
+
+.types {
+  @media ($mobile) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+
+  div {
+    background-color: var(--white);
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+
+    &:hover {
+      animation: anime forwards 0.25s ease;
+    }
+  }
+
+  img {
+    padding: 40px 115px 0px 115px;
+    width: 100%;
+  }
+
+  label {
+    font-size: 12px;
+    color: #b4b4b4;
+  }
+}
+
+#hot {
+  color: #ff7917 !important;
+}
+
+#cold {
+  color: #3ba7c7 !important;
+}
+
+#recycle {
+  color: #72a03f !important;
+}

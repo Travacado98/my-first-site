@@ -5,29 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cum Store</title>
+    <title>Milk Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/mystyles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="header">
-        <a href="#start">
-            <img src="images/cum-store-logo.png" alt="cummy" id="start">
+        <a href="../my-first-site/index.html">
+            <img src="../my-first-site/images/milkstore-logo.svg" alt="milkystore" id="start">
         </a>
         <div class="linka">
-            <a href="pages/shop.html">
-                <h4>Shop Cum</h4>
+            <a href="../my-first-site/pages/shop.html" class="active">
+                <h4>Shop Milk</h4>
             </a>
-            <a href="#infotext">
-                <h4>About Our Cum</h4>
+            <a href="../my-first-site/pages/about.html">
+                <h4>About Our Milk</h4>
             </a>
-            <a href="#formin">
-                <h4>Cumtact Us</h4>
+            <a href="../my-first-site/pages/form.html">
+                <h4>Contact Us</h4>
             </a>
         </div>
     </div>
@@ -37,16 +39,23 @@
         <div class="main">
             <div id="maininfo">
                 <div>
-                    <h1>Our cum. <br>
+                    <h1>Our Milk. <br>
                         Just for you.</h1>
                     <p>Sometimes, it just isn’t enough to say, “No, thank you.” Is this one of those times? I guess so.
                         What
-                        we like to say here at CumStore™ is, “One glass, and you can’t stop gassin.”
+                        we like to say here at MilkStore™ is, “One glass, and you can’t stop gassin.”
                         <br>
                         <br>
-                        We hope you think so too 😘
+                        We hope you think so too.
                     </p>
-                    <button>Got Cum?</button>
+                    <a href="../my-first-site/pages/shop.html">
+                        <button>
+                            <span class="material-icons">
+                                shopping_cart
+                            </span>
+                            Shop Milk
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="glasswrap">
@@ -56,81 +65,74 @@
 
         <section id="shop">
             <div class="flavors">
-                <h1>Cum Flavors</h1>
+                <h1>Milk Flavors</h1>
                 <div class="types">
-                    <div class="cumem">
-                        <img src="images/Image 3.png" alt="">
-                        <h3>Hot</h3>
-                    </div>
-
-                    <div class="cumem">
-                        <img src="images/Image 4.png" alt="">
-                        <h3>Cold</h3>
-                    </div>
-
-                    <div class="cumem">
-                        <img src="images/Image 5.png" alt="">
-                        <h3>Recycled <label>(SCUM CUM)</label>
-                        </h3>
-                    </div>
+                    <a href="../my-first-site/pages/shop.html">
+                        <div class="cumem">
+                            <img src="images/Image 3.png" alt="">
+                            <h3 id="hot">Hot</h3>
+                        </div>
+                    </a>
+                    <a href="../my-first-site/pages/shop.html">
+                        <div class="cumem">
+                            <img src="images/Image 4.png" alt="">
+                            <h3 id="cold">Cold</h3>
+                        </div>
+                    </a>
+                    <a href="../my-first-site/pages/shop.html">
+                        <div class="cumem">
+                            <img src="images/Image 5.png" alt="">
+                            <h3 id="recycle">Recycled <label>(NOT GOOD)</label>
+                            </h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <div class="info">
-            <img src="images/cum-glass.png" alt="">
+            <img src="images/milk-glass.png" alt="">
             <div id="infotext">
-                <h1>About Our Cum</h1>
-                <p>Our Cum™ is locally sourced from the finest individuals, parties, and beliefs. We pride ourselves
-                    on being the only store with the sole purpose of providing Cum™ to the masses. Our high quality,
-                    low calorie Cum™ will be sure to leave you soaking with joy.
+                <h1>About Our Milk</h1>
+                <p>Our Milk™ is locally sourced from the finest individuals, parties, and beliefs. We pride ourselves on
+                    being the only store with the sole purpose of providing Milk™ to the masses. Our high quality, low
+                    calorie Milk™ will be sure to leave you crying with joy.
                     <br>
                     <br>
-                    For those not in the know, Cum™ is sticky love juice created in a guys balls and released
-                    through his penis when he becomes sexually aroused.
+                    For those not in the know, Milk™ is not just from cows, but all sorts of creatures. If you’re
+                    looking for a specific creature’s milk, let us know!
+                    <br>
+                    <br>
+                    <a id="learn" href="../my-first-site/pages/about.html">Learn more</a>
+
                 </p>
             </div>
         </div>
     </div>
 
     <section id="formin">
-        <div class="cumform">
-            <h1>Come get creamin!</h1>
-            <h5>Fill out the form below, and we’ll cream you ASAP!</h5>
+        <div class="milkform">
+            <h1>Sign up for our newsletter</h1>
+            <p>Enter your email below, and we’ll send you creamy emails every couple of hours!</p>
 
             <form>
                 <!-- Form shit -->
+                <div class="emails">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Enter your email" />
+                    </div>
 
-                <div class="input-wrapper">
-                    <input type="text" placeholder="First name" />
+
+                    <button type="submit">Milk Me!</button>
                 </div>
-
-                <div class="input-wrapper">
-                    <input type="text" placeholder="Last name" />
-                </div>
-
-                <div class="input-wrapper">
-                    <input type="text" placeholder="Email" />
-                </div>
-
-                <div class="input-wrapper">
-                    <select>
-                        <option>Your Favorite Cum Flavor</option>
-                        <option>Hot</option>
-                        <option>Cold</option>
-                        <option>Recycled</option>
-                    </select>
-                </div>
-
-                <button type="submit">Send!</button>
             </form>
         </div>
     </section>
 
     <div class="footer">
         <div id="rights">
-            <img src="images/cum-store-logo.png" alt="cummy">
-            <p>© CumStore, 2022. All rights reserved.</p>
+            <img src="images/milkstore-logo.svg" alt="milk">
+            <p>© MilkStore, 2022. All rights reserved.</p>
         </div>
         <div id="socials">
             <img src="images/instagram-brands.svg" alt="">
