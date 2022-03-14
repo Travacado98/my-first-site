@@ -1,12 +1,8 @@
 .intromilk {
-  padding: 180px 300px 80px 300px;
+  padding: 80px 20px;
 }
 
 .aboutmilk {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-
   img {
     max-height: 420px;
     width: 100%;
@@ -22,20 +18,15 @@
 
 .truth {
   background: linear-gradient(#414951, #000000);
-  padding: 80px 300px;
+  padding: 80px 20px;
   color: white;
 
   #cow {
     border-radius: 50px;
     width: 100%;
   }
-
-  .abouttruth {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-  }
 }
+
 .more {
   display: flex;
   flex-direction: column;

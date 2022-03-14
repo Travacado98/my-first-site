@@ -1,31 +1,10 @@
-.website {
-  @media ($mobile) {
-    margin-top: 140px;
-  }
-
-  width: 100%;
-  max-width: 1320px;
-  padding: 0 20px;
-  margin: 180px auto 0 auto;
-}
-
-button {
-  background-color: var(--cum);
-  color: #3f4952;
-  border-radius: 15px;
-  box-shadow: 0px 3px 6px #00000029;
-  padding: 13px 30px;
-  border: none;
-  font-weight: bold;
-
-  &:hover {
-    animation: anime both 0.25s ease-in-out;
-  }
-}
-
 #learn {
   color: #ff7917;
   font-weight: bold;
+}
+
+.index {
+  padding-top: 80px;
 }
 
 .main {
@@ -68,6 +47,7 @@ button {
     justify-content: center;
     padding-top: 80px;
   }
+  
   button {
     @media ($mobile) {
       margin-top: 10px;
