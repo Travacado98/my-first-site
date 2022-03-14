@@ -18,7 +18,7 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  background-color: var(--white);
+  background-color: red;
   box-shadow: 0px 3px 6px #00000029;
 
   img {
@@ -41,7 +41,7 @@
 
       &.active {
         color: var(--active);
-      } 
+      }
 
       &:hover {
         color: var(--active);
@@ -53,7 +53,7 @@
         @media ($mobile) {
           font-size: 14px;
         }
-    
+
         margin: 0;
       }
     }
