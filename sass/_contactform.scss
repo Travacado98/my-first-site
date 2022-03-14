@@ -12,6 +12,7 @@
   margin: 0px;
 
   h2 {
+    margin: 0px;
     font-size: 42px;
   }
 
@@ -19,15 +20,6 @@
     display: grid;
     padding: 0px 100px;
     gap: 20px;
-
-    h2 {
-      margin: 0px;
-      font-size: 42px;
-    }
-
-    p {
-      max-width: 600px;
-    }
 
     ::placeholder {
       color: #fcfaf450;

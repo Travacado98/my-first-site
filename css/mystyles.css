@@ -879,19 +879,13 @@ button:hover {
   }
 }
 #contactin h2 {
+  margin: 0px;
   font-size: 42px;
 }
 #contactin #contactform {
   display: grid;
   padding: 0px 100px;
   gap: 20px;
-}
-#contactin #contactform h2 {
-  margin: 0px;
-  font-size: 42px;
-}
-#contactin #contactform p {
-  max-width: 600px;
 }
 #contactin #contactform ::placeholder {
   color: #fcfaf450;
