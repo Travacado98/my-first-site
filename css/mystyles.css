@@ -1018,17 +1018,36 @@ button:hover {
 }
 @media (max-width:550px) {
   #contactin {
-    padding: 20px 30px 20px 30px;
+    padding: 30px 30px;
+  }
+}
+#contactin p {
+  font-weight: 200;
+}
+@media (max-width:550px) {
+  #contactin p {
+    font-size: 14px;
   }
 }
 #contactin h2 {
   margin: 0px;
   font-size: 42px;
 }
+@media (max-width:550px) {
+  #contactin h2 {
+    font-size: 30px;
+  }
+}
 #contactin #contactform {
+  padding-top: 10px;
   display: grid;
-  padding: 0px 100px;
+  width: 100%;
   gap: 20px;
+}
+@media (max-width:550px) {
+  #contactin #contactform {
+    padding-bottom: 20px;
+  }
 }
 #contactin #contactform ::placeholder {
   color: #fcfaf450;
@@ -1080,10 +1099,20 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (max-width:550px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
 .contact img {
   width: 100%;
   height: 800px;
   object-fit: cover;
+}
+@media (max-width:550px) {
+  .contact img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=mystyles.css.map */
