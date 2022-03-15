@@ -1,4 +1,7 @@
 .shoppy {
+  @media ($mobile) {
+    padding: 40px;
+  }
   position: relative;
   padding: 80px;
 
@@ -31,11 +34,20 @@
     place-items: center;
 
     h1 {
+      @media ($mobile) {
+        text-align: center;
+        font-size: 40px;
+      }
+
       font-size: 50px;
       margin: 0px;
     }
 
     p {
+      @media ($mobile) {
+        width: 100%;
+        margin-bottom: 0px;
+      }
       width: 600px;
       text-align: center;
     }
@@ -43,12 +55,25 @@
 }
 
 .shopflavors {
+  @media ($mobile) {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+  }
+
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 40px;
   padding-top: 80px;
 
   .note {
+    @media ($mobile) {
+      padding: 10px 12px;
+      position: static;
+      top: 0px;
+      align-self: auto;
+      order: -1;
+    }
+
     position: sticky;
     top: 120px;
     align-self: start;
@@ -56,11 +81,20 @@
 }
 
 .milked {
+  @media ($mobile) {
+    padding-bottom: 30px;
+  }
+
   display: grid;
   gap: 40px;
   grid-template-rows: 1fr;
 
   .mflavors {
+    @media ($mobile) {
+      display: block;
+      padding: 20px;
+    }
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,15 +104,29 @@
   }
 
   .flavtext {
-    padding-left: 40px;
-    padding-right: 40px;
+    @media ($mobile) {
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    padding: 0 40px;
   }
 
   .buy {
+    @media ($mobile) {
+      width: 100%;
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+
     filter: grayscale(1);
   }
 
   img {
+    @media ($mobile) {
+      display: none;
+    }
+
     padding: 106px 40px;
     border-radius: 25px 0 0 25px;
   }
@@ -97,11 +145,21 @@
 }
 
 #shoplabel {
+  @media ($mobile) {
+    font-size: 14px;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+
   font-size: 16px;
   color: #b4b4b4;
 }
 
 #recyclegrid {
+  @media ($mobile) {
+    flex-direction: column;
+  }
+
   display: flex;
   width: 100%;
   align-items: center;
@@ -117,5 +175,9 @@
 }
 
 #recycleshop {
+  @media ($mobile) {
+    margin: 0px;
+  }
+
   color: #72a03f;
 }
