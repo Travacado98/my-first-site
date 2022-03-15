@@ -798,6 +798,7 @@ button:hover {
   grid-template-columns: 3fr 1fr;
   gap: 40px;
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 @media (max-width:550px) {
   .shopflavors {
@@ -981,7 +982,9 @@ button:hover {
   text-align: center;
   background: #3f4952;
   color: white;
-  padding: 80px 0px;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 @media (max-width:550px) {
   .more {
@@ -994,9 +997,11 @@ button:hover {
   }
 }
 .more p {
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
   text-align: center;
+  font-size: 18px;
+  margin: 0px;
 }
 
 @keyframes anime {
