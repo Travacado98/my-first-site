@@ -1011,10 +1011,12 @@ button:hover {
   color: var(--cum);
   font-family: Poppins;
   background-color: var(--text);
-  place-content: center;
-  text-align: center;
-  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 60px 60px 0px 60px;
   margin: 0px;
+  width: 100%;
 }
 @media (max-width:550px) {
   #contactin {
@@ -1027,11 +1029,14 @@ button:hover {
 @media (max-width:550px) {
   #contactin p {
     font-size: 14px;
+    text-align: center;
   }
 }
 #contactin h2 {
+  text-align: center;
   margin: 0px;
   font-size: 42px;
+  width: 100%;
 }
 @media (max-width:550px) {
   #contactin h2 {
@@ -1043,6 +1048,7 @@ button:hover {
   display: grid;
   width: 100%;
   gap: 20px;
+  max-width: 600px;
 }
 @media (max-width:550px) {
   #contactin #contactform {
@@ -1106,7 +1112,7 @@ button:hover {
 }
 .contact img {
   width: 100%;
-  height: 800px;
+  height: 750px;
   object-fit: cover;
 }
 @media (max-width:550px) {
