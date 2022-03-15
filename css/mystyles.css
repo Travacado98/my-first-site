@@ -374,13 +374,18 @@ body {
 }
 
 button {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  place-items: center;
   background-color: var(--cum);
   color: #3f4952;
   border-radius: 15px;
   box-shadow: 0px 3px 6px #00000029;
-  padding: 13px 30px;
+  padding: 10px 25px;
   border: none;
   font-weight: bold;
+  font-size: 18px;
+  gap: 5px;
 }
 button:hover {
   animation: anime both 0.25s ease-in-out;
@@ -645,6 +650,9 @@ button:hover {
 #formin .emails button {
   width: 100%;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #formin .emails input {
   width: 100%;
@@ -894,6 +902,11 @@ button:hover {
 }
 #contactin #contactform ::placeholder {
   color: #fcfaf450;
+}
+#contactin #contactform button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #contactin input,
 #contactin select {
