@@ -705,6 +705,11 @@ button:hover {
 .footer #rights img {
   margin-left: 0px;
 }
+@media (max-width:550px) {
+  .footer #rights img {
+    width: 100%;
+  }
+}
 
 .shoppy {
   position: relative;
