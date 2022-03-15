@@ -1,6 +1,6 @@
 #formin {
   @media ($mobile) {
-    padding: 20px 30px 20px 30px;
+    padding: 40px 40px;
   }
 
   color: var(--cum);
@@ -17,11 +17,20 @@
     text-align: center;
 
     h1 {
+      @media ($mobile) {
+        font-size: 34px;
+      }
+
       margin: 0px;
       font-size: 42px;
     }
 
     p {
+      @media ($mobile) {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+
       max-width: 600px;
       font-size: 18px;
       font-weight: 300;
@@ -46,6 +55,12 @@
     color: #fcfaf4;
   }
   .emails {
+    @media ($mobile) {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 10px;

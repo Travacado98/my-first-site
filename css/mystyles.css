@@ -608,7 +608,7 @@ button:hover {
 }
 @media (max-width:550px) {
   #formin {
-    padding: 20px 30px 20px 30px;
+    padding: 40px 40px;
   }
 }
 #formin .milkform {
@@ -620,11 +620,22 @@ button:hover {
   margin: 0px;
   font-size: 42px;
 }
+@media (max-width:550px) {
+  #formin .milkform h1 {
+    font-size: 34px;
+  }
+}
 #formin .milkform p {
   max-width: 600px;
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 40px;
+}
+@media (max-width:550px) {
+  #formin .milkform p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
 }
 #formin .milkform ::placeholder {
   color: #fcfaf450;
@@ -646,6 +657,13 @@ button:hover {
   grid-template-columns: 3fr 1fr;
   gap: 10px;
   justify-content: center;
+}
+@media (max-width:550px) {
+  #formin .emails {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 #formin .emails button {
   width: 100%;
