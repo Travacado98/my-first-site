@@ -41,7 +41,7 @@
 
       &.active {
         color: var(--active);
-      } 
+      }
 
       &:hover {
         color: var(--active);
@@ -53,7 +53,7 @@
         @media ($mobile) {
           font-size: 14px;
         }
-    
+
         margin: 0;
       }
     }

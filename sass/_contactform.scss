@@ -1,57 +1,77 @@
 #contactin {
   @media ($mobile) {
-    padding: 20px 30px 20px 30px;
+    padding: 30px 30px;
   }
 
+  p {
+    @media ($mobile) {
+      font-size: 14px;
+      text-align: center;
+    }
+    font-weight: 200;
+  }
   color: var(--cum);
   font-family: Poppins;
   background-color: var(--text);
-  place-content: center;
-  text-align: center;
-  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 80px 60px 0px 60px;
   margin: 0px;
+  width: 100%;
 
   h2 {
+    @media ($mobile) {
+      font-size: 30px;
+    }
+    text-align: center;
+    margin: 0px;
     font-size: 42px;
+    width: 100%;
   }
 
   #contactform {
+    @media ($mobile) {
+      padding-bottom: 20px;
+    }
+    padding-top: 10px;
     display: grid;
-    padding: 0px 100px;
-    gap: 20px;
-
-    h2 {
-      margin: 0px;
-      font-size: 42px;
-    }
-
-    p {
-      max-width: 600px;
-    }
-
-    ::placeholder {
-      color: #fcfaf450;
-    }
-  }
-
-  input,
-  select {
-    // margin: 20px 0 20px 0;
-    border-radius: 15px;
-    border-color: #fcfaf4;
-    border-style: solid;
-    display: block;
     width: 100%;
-    padding: 10px 20px;
-    height: 50px;
-    background: #3f4952;
-    color: #fcfaf4;
+    gap: 20px;
+    max-width: 600px;
 
-    &:focus {
-      background-color: #fcfaf4;
-      outline: 0;
+    input:focus::placeholder {
       color: #3f4952;
     }
+  }
+  :placeholder-shown {
+    color: #3f4952;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+input,
+select {
+  // margin: 20px 0 20px 0;
+  border-radius: 15px;
+  border-color: #fcfaf4;
+  border-style: solid;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  height: 50px;
+  background: #3f4952;
+  color: #fcfaf480;
+
+  &:focus {
+    background-color: #fcfaf4;
+    outline: 0;
+    color: #3f4952;
   }
 }
 
@@ -65,7 +85,7 @@
   width: 100%;
   padding: 10px 20px;
   background: #3f4952;
-  color: #fcfaf4;
+  color: #fcfaf480;
   resize: none;
 
   &:focus {
@@ -75,12 +95,18 @@
   }
 }
 .contact {
+  @media ($mobile) {
+    grid-template-columns: 1fr;
+  }
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   img {
+    @media ($mobile) {
+      display: none;
+    }
     width: 100%;
-    height: 800px;
+    height: 750px;
     object-fit: cover;
   }
 }
