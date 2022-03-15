@@ -926,6 +926,13 @@ button:hover {
 .intromilk {
   padding: 80px 20px;
 }
+@media (max-width:550px) {
+  .intromilk {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
 
 .aboutmilk img {
   max-height: 420px;
@@ -944,9 +951,27 @@ button:hover {
   padding: 80px 20px;
   color: white;
 }
+@media (max-width:550px) {
+  .truth {
+    padding: 40px 20px;
+  }
+}
+@media (max-width:550px) {
+  .truth h1 {
+    margin-top: 0px;
+    text-align: center;
+  }
+}
 .truth #cow {
   border-radius: 50px;
   width: 100%;
+}
+
+@media (max-width:550px) {
+  .truthtext {
+    text-align: center;
+    order: -1;
+  }
 }
 
 .more {
@@ -957,6 +982,16 @@ button:hover {
   background: #3f4952;
   color: white;
   padding: 80px 0px;
+}
+@media (max-width:550px) {
+  .more {
+    padding: 30px 20px;
+  }
+}
+@media (max-width:550px) {
+  .more h1 {
+    margin-top: 15px;
+  }
 }
 .more p {
   max-width: 500px;

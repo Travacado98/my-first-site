@@ -1,4 +1,10 @@
 .intromilk {
+  @media ($mobile) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
   padding: 80px 20px;
 }
 
@@ -17,6 +23,17 @@
 }
 
 .truth {
+  @media ($mobile) {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    @media ($mobile) {
+      margin-top: 0px;
+      text-align: center;
+    }
+  }
+
   background: linear-gradient(#414951, #000000);
   padding: 80px 20px;
   color: white;
@@ -27,7 +44,23 @@
   }
 }
 
+.truthtext {
+  @media ($mobile) {
+    text-align: center;
+    order: -1;
+  }
+}
+
 .more {
+  @media ($mobile) {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    @media ($mobile) {
+      margin-top: 15px;
+    }
+  }
   display: flex;
   flex-direction: column;
   place-items: center;
