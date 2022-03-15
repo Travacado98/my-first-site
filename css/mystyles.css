@@ -353,7 +353,7 @@ template {
 }
 
 ::placeholder {
-  color: var(--cum);
+  color: #fcfaf480;
   opacity: 1;
 }
 
@@ -650,7 +650,7 @@ button:hover {
   padding: 10px 20px;
   height: 50px;
   background: #3f4952;
-  color: #fcfaf4;
+  color: #fcfaf480;
 }
 #formin .emails {
   display: grid;
@@ -1014,7 +1014,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   place-items: center;
-  padding: 60px 60px 0px 60px;
+  padding: 80px 60px 0px 60px;
   margin: 0px;
   width: 100%;
 }
@@ -1055,16 +1055,20 @@ button:hover {
     padding-bottom: 20px;
   }
 }
-#contactin #contactform ::placeholder {
-  color: #fcfaf450;
+#contactin #contactform input:focus::placeholder {
+  color: #3f4952;
 }
-#contactin #contactform button {
+#contactin :placeholder-shown {
+  color: #3f4952;
+}
+#contactin button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#contactin input,
-#contactin select {
+
+input,
+select {
   border-radius: 15px;
   border-color: #fcfaf4;
   border-style: solid;
@@ -1073,10 +1077,10 @@ button:hover {
   padding: 10px 20px;
   height: 50px;
   background: #3f4952;
-  color: #fcfaf4;
+  color: #fcfaf480;
 }
-#contactin input:focus,
-#contactin select:focus {
+input:focus,
+select:focus {
   background-color: #fcfaf4;
   outline: 0;
   color: #3f4952;
@@ -1092,7 +1096,7 @@ button:hover {
   width: 100%;
   padding: 10px 20px;
   background: #3f4952;
-  color: #fcfaf4;
+  color: #fcfaf480;
   resize: none;
 }
 #textarea:focus {

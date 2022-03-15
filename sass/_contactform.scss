@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   place-items: center;
-  padding: 60px 60px 0px 60px;
+  padding: 80px 60px 0px 60px;
   margin: 0px;
   width: 100%;
 
@@ -40,35 +40,38 @@
     gap: 20px;
     max-width: 600px;
 
-    ::placeholder {
-      color: #fcfaf450;
-    }
-
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  input,
-  select {
-    // margin: 20px 0 20px 0;
-    border-radius: 15px;
-    border-color: #fcfaf4;
-    border-style: solid;
-    display: block;
-    width: 100%;
-    padding: 10px 20px;
-    height: 50px;
-    background: #3f4952;
-    color: #fcfaf4;
-
-    &:focus {
-      background-color: #fcfaf4;
-      outline: 0;
+    input:focus::placeholder {
       color: #3f4952;
     }
+  }
+  :placeholder-shown {
+    color: #3f4952;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+input,
+select {
+  // margin: 20px 0 20px 0;
+  border-radius: 15px;
+  border-color: #fcfaf4;
+  border-style: solid;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  height: 50px;
+  background: #3f4952;
+  color: #fcfaf480;
+
+  &:focus {
+    background-color: #fcfaf4;
+    outline: 0;
+    color: #3f4952;
   }
 }
 
@@ -82,7 +85,7 @@
   width: 100%;
   padding: 10px 20px;
   background: #3f4952;
-  color: #fcfaf4;
+  color: #fcfaf480;
   resize: none;
 
   &:focus {
