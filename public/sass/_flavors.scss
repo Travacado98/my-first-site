@@ -1,10 +1,13 @@
-.flavors {
+.flavors-section {
   margin-top: 80px;
 }
 
-.types {
+.flavors {
   @media ($mobile) {
     grid-template-columns: 1fr;
+  }
+
+  @media ($tablet) {
     gap: 20px;
   }
 
@@ -12,37 +15,30 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 
-  div {
+  a {
     background-color: var(--white);
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 25px;
+    box-shadow: $shadow;
+    border-radius: $br;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
 
     &:hover {
-      animation: anime forwards 0.25s ease;
+      transform: translateY(-5px);
     }
   }
 
   img {
-    padding: 40px 115px 0px 115px;
+    max-width: 175px;
     width: 100%;
   }
 
-  label {
-    font-size: 12px;
-    color: #b4b4b4;
+  h3 {
+    margin-bottom: 0;
+
+    small {
+      color: var(--neutral);
+    }
   }
-}
-
-#hot {
-  color: #ff7917 !important;
-}
-
-#cold {
-  color: #3ba7c7 !important;
-}
-
-#recycle {
-  color: #72a03f !important;
 }

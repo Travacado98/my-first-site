@@ -1,11 +1,13 @@
 :root {
-  --cum: #fcfaf4;
+  --milk: #fcf8ff;
   --white: #ffffff;
-  --shadow: #00000029;
-  --text: #3f4952;
-  --scum: #b4b4b4;
-  --active: #ff7917;
+  --text: #320521;
+  --active: #8286ea;
+  --neutral: #b4b4b4;
 }
 
-$mobile: "max-width:550px";
+$mobile: "max-width:600px";
+$tablet: "max-width:900px";
 $header-height: 100px;
+$shadow: 0px 3px 6px #00000029;
+$br: 15px;

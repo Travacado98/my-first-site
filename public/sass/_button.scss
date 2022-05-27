@@ -1,0 +1,29 @@
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--active);
+  color: var(--milk);
+  border-radius: $br;
+  box-shadow: $shadow;
+  padding: 0px 30px;
+  height: 60px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  gap: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
+
+  &:not(:disabled):hover {
+    transform: translateY(-5px);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: var(--milk);
+    color: var(--text);
+  }
+}

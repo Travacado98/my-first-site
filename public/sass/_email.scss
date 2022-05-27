@@ -1,0 +1,37 @@
+.email-section {
+  @media ($mobile) {
+    padding: 40px;
+  }
+
+  color: var(--milk);
+  background-color: var(--text);
+  padding: 80px 0;
+  text-align: center;
+
+  > div {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    @media ($mobile) {
+      margin-bottom: 30px;
+    }
+
+    margin-bottom: 40px;
+  }
+
+  form {
+    @media ($mobile) {
+      flex-direction: column;
+    }
+
+    display: flex;
+    gap: 10px;
+  }
+}

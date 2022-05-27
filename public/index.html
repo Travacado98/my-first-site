@@ -2,147 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milk Store</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/mystyles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milk Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/mystyles.css">
 </head>
 
 <body>
-    <div class="header">
-        <a href="index.html">
-            <img src="images/milkstore-logo.svg" alt="milkystore" id="start">
+  <header>
+    <a href="index.html">
+      <img src="images/milkyway-logo.png" alt="MilkyWay logo">
+    </a>
+    <nav>
+      <a href="pages/shop.html">
+        <h4>Shop Milk</h4>
+      </a>
+      <a href="pages/about.html">
+        <h4>About Our Milk</h4>
+      </a>
+      <a href="pages/form.html">
+        <h4>Contact Us</h4>
+      </a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero-section">
+      <div class="hero-text">
+        <h1>Our Milk. <br> Just for you.</h1>
+
+        <p>Sometimes, it just isn’t enough to say, “No, thank you.” Is this one of those times? I guess so. What we
+          like to say here at MilkStore™ is, “One glass, and you can’t stop gassin.”</p>
+
+        <p>We hope you think so too.</p>
+
+        <a href="pages/shop.html">
+          <button>
+            <span class="material-icons">
+              shopping_cart
+            </span>
+            Shop Milk
+          </button>
         </a>
-        <div class="linka">
-            <a href="pages/shop.html">
-                <h4>Shop Milk</h4>
-            </a>
-            <a href="pages/about.html">
-                <h4>About Our Milk</h4>
-            </a>
-            <a href="pages/form.html">
-                <h4>Contact Us</h4>
-            </a>
-        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/miss-milk.png" alt="A photo of Miss Milk">
+      </div>
+    </section>
+
+    <section class="flavors-section">
+      <h1>Milk Flavors</h1>
+
+      <div class="flavors">
+        <a href="pages/shop.html">
+          <img src="images/fire.png" alt="Fire icon">
+          <h3 class="hot">Hot</h3>
+        </a>
+        <a href="pages/shop.html">
+          <img src="images/ice.png" alt="Ice icon">
+          <h3 class="cold">Cold</h3>
+        </a>
+        <a href="pages/shop.html">
+          <img src="images/recycle.png" alt="Recycle icon">
+          <h3 class="recycle">Recycled <small>(NOT GOOD)</small></h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <img src="images/milk-glass.png" alt="A photo of a glass of milk">
+
+      <div>
+        <h1>About Our Milk</h1>
+
+        <p>Our Milk™ is locally sourced from the finest individuals, parties, and beliefs. We pride
+          ourselves on
+          being the only store with the sole purpose of providing Milk™ to the masses. Our high quality,
+          low
+          calorie Milk™ will be sure to leave you crying with joy.
+        </p>
+
+        <p>
+          For those not in the know, Milk™ is not just from cows, but all sorts of creatures. If you’re
+          looking for a specific creature’s milk, let us know!
+        </p>
+
+        <p>
+          <a href="pages/about.html">
+            <strong>Learn more</strong>
+          </a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <section class="email-section">
+    <div>
+      <h1>Sign up for our newsletter</h1>
+
+      <p>Enter your email below, and we’ll send you creamy emails every couple of hours!</p>
+
+      <form>
+        <input type="text" placeholder="Enter your email" />
+        <button type="submit">Milk Me!</button>
+      </form>
     </div>
-
-    <div class="index">
-        <div class="container">
-            <div class="main">
-                <div id="maininfo">
-                    <div>
-                        <h1>Our Milk. <br>
-                            Just for you.</h1>
-                        <p>Sometimes, it just isn’t enough to say, “No, thank you.” Is this one of those times? I guess
-                            so.
-                            What
-                            we like to say here at MilkStore™ is, “One glass, and you can’t stop gassin.”
-                            <br>
-                            <br>
-                            We hope you think so too.
-                        </p>
-                        <a href="pages/shop.html">
-                            <button>
-                                <span class="material-icons">
-                                    shopping_cart
-                                </span>
-                                Shop Milk
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="glasswrap">
-                    <img src="images/Image 2.png" alt="glass">
-                </div>
-            </div>
-
-            <section id="shop">
-                <div class="flavors">
-                    <h1>Milk Flavors</h1>
-                    <div class="types">
-                        <a href="pages/shop.html">
-                            <div class="cumem">
-                                <img src="images/Image 3.png" alt="">
-                                <h3 id="hot">Hot</h3>
-                            </div>
-                        </a>
-                        <a href="pages/shop.html">
-                            <div class="cumem">
-                                <img src="images/Image 4.png" alt="">
-                                <h3 id="cold">Cold</h3>
-                            </div>
-                        </a>
-                        <a href="pages/shop.html">
-                            <div class="cumem">
-                                <img src="images/Image 5.png" alt="">
-                                <h3 id="recycle">Recycled <label>(NOT GOOD)</label>
-                                </h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <div class="info">
-                <img src="images/milk-glass.png" alt="">
-                <div id="infotext">
-                    <h1>About Our Milk</h1>
-                    <p>Our Milk™ is locally sourced from the finest individuals, parties, and beliefs. We pride
-                        ourselves on
-                        being the only store with the sole purpose of providing Milk™ to the masses. Our high quality,
-                        low
-                        calorie Milk™ will be sure to leave you crying with joy.
-                        <br>
-                        <br>
-                        For those not in the know, Milk™ is not just from cows, but all sorts of creatures. If you’re
-                        looking for a specific creature’s milk, let us know!
-                        <br>
-                        <br>
-                        <a id="learn" href="pages/about.html">Learn more</a>
-
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <section id="formin">
-            <div class="milkform">
-                <h1>Sign up for our newsletter</h1>
-                <p>Enter your email below, and we’ll send you creamy emails every couple of hours!</p>
-
-                <form>
-                    <!-- Form shit -->
-                    <div class="emails">
-                        <div class="input-wrapper">
-                            <input type="text" placeholder="Enter your email" />
-                        </div>
+  </section>
 
 
-                        <button type="submit">Milk Me!</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </div>
-
-    <div class="footer">
-        <div id="rights">
-            <img src="images/milkstore-logo.svg" alt="milk">
-            <p>© MilkStore, 2022. All rights reserved.</p>
-        </div>
-        <div id="socials">
-            <img src="images/instagram-brands.svg" alt="">
-            <img src="images/facebook-brands.svg" alt="">
-        </div>
-    </div>
+  <footer>
+    <img src="images/milkyway-logo.png" alt="MilkyWay logo">
+    <p>&copy; MilkyWay, 2022. All rights reserved.</p>
+  </footer>
 
 </body>
 
