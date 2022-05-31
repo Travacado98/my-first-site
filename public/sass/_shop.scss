@@ -1,32 +1,33 @@
-.shoppy {
+.shop-hero {
   @media ($mobile) {
     padding: 40px;
   }
   position: relative;
   padding: 80px;
 
-  .milkback {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
     left: 0;
     top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
     filter: blur(5px);
     background-attachment: fixed;
     background-size: cover;
     background-image: url(../images/milkbackground.png);
-    position: absolute;
-    width: 100%;
-    height: 100%;
   }
 
-  .blackback {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  &::after {
     background-color: rgba(63, 73, 82, 0.5);
   }
 
-  .shoppytext {
+  > div {
     position: relative;
     z-index: 1;
     color: white;
@@ -54,7 +55,7 @@
   }
 }
 
-.shopflavors {
+.shop-body {
   @media ($mobile) {
     grid-template-columns: 1fr;
     padding-top: 30px;
@@ -81,7 +82,7 @@
   }
 }
 
-.milked {
+.flavors-list {
   @media ($mobile) {
     padding-bottom: 30px;
   }
@@ -90,7 +91,7 @@
   gap: 40px;
   grid-template-rows: 1fr;
 
-  .mflavors {
+  .flavor {
     @media ($mobile) {
       display: block;
       padding: 20px;
@@ -100,12 +101,12 @@
     justify-content: center;
     align-items: center;
     background-color: var(--white);
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: $shadow;
     border-radius: $br;
     line-height: 1;
   }
 
-  .flavtext {
+  .text-wrapper {
     @media ($mobile) {
       text-align: center;
       padding: 0 20px;
@@ -133,10 +134,12 @@
     padding: 106px 40px;
     border-radius: $br 0 0 $br;
   }
+
   .image-wrapper {
     line-height: 1;
     border-radius: $br 0 0 $br;
   }
+
   #fire {
     background-color: #fff0e3;
   }
@@ -150,7 +153,7 @@
   }
 }
 
-#shoplabel {
+#label {
   @media ($mobile) {
     font-size: 14px;
     margin: 0px;
@@ -161,7 +164,7 @@
   color: #b4b4b4;
 }
 
-#recyclegrid {
+#recycle-container {
   @media ($mobile) {
     flex-direction: column;
   }
@@ -170,20 +173,4 @@
   width: 100%;
   align-items: center;
   gap: 8px;
-}
-
-#hotshop {
-  color: #ff7917;
-}
-
-#coldshop {
-  color: #3ba7c7;
-}
-
-#recycleshop {
-  @media ($mobile) {
-    margin: 0px;
-  }
-
-  color: #72a03f;
 }

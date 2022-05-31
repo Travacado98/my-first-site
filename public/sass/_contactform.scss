@@ -1,6 +1,28 @@
-#contactin {
+.contact-section {
   @media ($mobile) {
-    padding: 30px 30px;
+    grid-template-columns: 1fr;
+  }
+
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  img {
+    @media ($mobile) {
+      display: none;
+    }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.contact-form {
+  @media ($mobile) {
+    padding: 20px;
+  }
+  @media ($tablet) {
+    padding: 40px;
   }
 
   p {
@@ -15,8 +37,10 @@
   background-color: var(--text);
   display: flex;
   flex-direction: column;
-  place-items: center;
-  padding: 80px 60px 0px 60px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px;
   margin: 0px;
   width: 100%;
 
@@ -30,7 +54,7 @@
     width: 100%;
   }
 
-  #contactform {
+  form {
     @media ($mobile) {
       padding-bottom: 20px;
     }
@@ -45,22 +69,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
-
-.contact {
-  @media ($mobile) {
-    grid-template-columns: 1fr;
-  }
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  img {
-    @media ($mobile) {
-      display: none;
-    }
-    width: 100%;
-    height: 750px;
-    object-fit: cover;
   }
 }

@@ -27,134 +27,132 @@
       <a href="about.html">
         <h4>About Our Milk</h4>
       </a>
-      <a href="form.html">
+      <a href="contact.html">
         <h4>Contact Us</h4>
       </a>
     </nav>
   </header>
 
-  <div class="shoppy">
-    <div class="shoppytext">
+  <section class="shop-hero">
+    <div>
       <h1>Shop Milk</h1>
-      <p>You want Milk™? We got it. So many delicious milk flavors that you won't be able to believe it. Check
-        them out below, and if you don't buy at least 3, we'll send you 30 as a consolation.
-        <br>
-        <br>
-        Milk™ is not just
-        from cows, but all sorts of creatures. If you’re looking for a specific creature’s milk, let us know!
+
+      <p>You want Milk™? We got it. So many delicious milk flavors that you won't be able to believe it. Check them out
+        below, and if you don't buy at least 3, we'll send you 30 as a consolation.
+      </p>
+
+      <p>
+        Milk™ is not just from cows, but all sorts of creatures. If you’re looking for a specific creature’s milk, let
+        us know!
       </p>
     </div>
-    <div class="milkback"></div>
-    <div class="blackback"></div>
-  </div>
+  </section>
 
   <div class="container">
-    <div class="shop">
-      <div class="shopflavors">
-        <div class="milked">
-          <div class="mflavors">
-            <div class="image-wrapper" id="fire">
-              <img src="../images/fire.png" alt="">
-            </div>
-            <div class="flavtext">
-              <h1 id="hotshop">Hot</h1>
-
-              <p>Just like Little Caesar's, this Milk is hot and ready. Straight from the pipes and piping
-                hot, this Milk is full of a full-bodied, salty flavor. You'll love the way it feels when
-                it
-                hits your lips, and if you don't, you probably just don't like Milk in general.
-                <br>
-                <br>
-                Also, this Milk is spicy.
-              </p>
-
-              <button class="buy" disabled>
-                <span class="material-icons">
-                  block
-                </span>
-                Sold Out
-              </button>
-            </div>
+    <section class="shop-body">
+      <div class="flavors-list">
+        <div class="flavor">
+          <div class="image-wrapper" id="fire">
+            <img src="../images/fire.png" alt="Fire icon">
           </div>
 
-          <div class="mflavors">
-            <div class="image-wrapper" id="ice">
-              <img src="../images/ice.png" alt="">
-            </div>
-            <div class="flavtext">
-              <h1 id="coldshop">Cold</h1>
+          <div class="text-wrapper">
+            <h1 class="hot">Hot</h1>
 
-              <p>Not a fan of the warmth? Maybe try the cold! Our cold Milk is not fresh. It has been
-                sitting
-                in a cold storage container for a minimum of 4 years, ensuring that all of the little
-                critters inside are dead as dead can be. If you don't like Milk, you probably won't like
-                this either.
-                <br>
-                <br>
-                This Milk is not spicy.
-              </p>
+            <p>Just like Little Caesar's, this Milk is hot and ready. Straight from the pipes and piping
+              hot, this Milk is full of a full-bodied, salty flavor. You'll love the way it feels when
+              it
+              hits your lips, and if you don't, you probably just don't like Milk in general.
+            </p>
 
-              <button class="buy" disabled>
-                <span class="material-icons">
-                  block
-                </span>
-                Sold Out</button>
-            </div>
-          </div>
+            <p>
+              Also, this Milk is spicy.
+            </p>
 
-          <div class="mflavors">
-            <div class="image-wrapper" id="recycle">
-              <img src="../images/recycle.png" alt="">
-            </div>
-            <div class="flavtext">
-              <div id="recyclegrid">
-                <h1 id="recycleshop">Recycled</h1>
-                <h5 id="shoplabel">(NOT GOOD)</h5>
-              </div>
-
-
-              <p>Uh oh! You've been MILKED! This Milk is gross and absolutely repulsive. It really is not
-                good, and we don't recommend it. That said, some people do like it. Maybe. Honestly,
-                this
-                Milk is what we've had lying around leftover on the floor.
-                <br>
-                <br>
-                Sometimes this Milk is spicy, but
-                mostly due to the dirt.
-              </p>
-
-              <button class="buy" disabled>
-                <span class="material-icons">
-                  block
-                </span>
-                Sold Out</button>
-            </div>
-            </h3>
+            <button class="buy" disabled>
+              <span class="material-icons">
+                block
+              </span>
+              Sold Out
+            </button>
           </div>
         </div>
 
-        <div class="note">
-          <h3>Please Note</h3>
-          <p>We are currently sold out of many of our products. To know when we are back in stock, sign up for
-            our
-            email newsletter on the <a id="learn" href="../index.html">home page </a>.</p>
+        <div class="flavor">
+          <div class="image-wrapper" id="ice">
+            <img src="../images/ice.png" alt="Ice icon">
+          </div>
 
+          <div class="text-wrapper">
+            <h1 class="cold">Cold</h1>
+
+            <p>Not a fan of the warmth? Maybe try the cold! Our cold Milk is not fresh. It has been
+              sitting
+              in a cold storage container for a minimum of 4 years, ensuring that all of the little
+              critters inside are dead as dead can be. If you don't like Milk, you probably won't like
+              this either.
+            </p>
+
+            <p>
+              This Milk is not spicy.
+            </p>
+
+            <button class="buy" disabled>
+              <span class="material-icons">
+                block
+              </span>
+              Sold Out
+            </button>
+          </div>
+        </div>
+
+        <div class="flavor">
+          <div class="image-wrapper" id="recycle">
+            <img src="../images/recycle.png" alt="Recycle icon">
+          </div>
+
+          <div class="text-wrapper">
+            <div id="recycle-container">
+              <h1 class="recycle">Recycled</h1>
+              <label>(NOT GOOD)</label>
+            </div>
+
+            <p>Uh oh! You've been MILKED! This Milk is gross and absolutely repulsive. It really is not
+              good, and we don't recommend it. That said, some people do like it. Maybe. Honestly,
+              this
+              Milk is what we've had lying around leftover on the floor.
+            </p>
+
+            <p>
+              Sometimes this Milk is spicy, but
+              mostly due to the dirt.
+            </p>
+
+            <button class="buy" disabled>
+              <span class="material-icons">
+                block
+              </span>
+              Sold Out
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="note">
+        <h3>Please Note</h3>
+
+        <p>We are currently sold out of many of our products. To know when we are back in stock, sign up for
+          our
+          email newsletter on the <a id="learn" href="../index.html"><strong>home page</strong></a>.
+        </p>
+      </div>
+    </section>
   </div>
 
   <footer>
-    <img src="images/milkyway-logo.png" alt="MilkyWay logo">
+    <img src="../images/milkyway-logo.png" alt="MilkyWay logo">
     <p>&copy; MilkyWay, 2022. All rights reserved.</p>
   </footer>
-
-
-
-
-
-
-
 </body>
 
 </html>

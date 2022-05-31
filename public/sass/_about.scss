@@ -1,4 +1,4 @@
-.intromilk {
+.about-hero {
   @media ($mobile) {
     padding-top: 20px;
     padding-bottom: 30px;
@@ -6,23 +6,22 @@
   }
 
   padding: 80px 20px;
-}
 
-.aboutmilk {
   img {
     max-height: 420px;
     width: 100%;
     border-radius: $br;
+    box-shadow: $shadow;
   }
 }
 
-.milktext {
+.about-text {
   justify-content: center;
   align-items: center;
   max-width: 620px;
 }
 
-.truth {
+.truth-section {
   @media ($mobile) {
     padding: 40px 20px;
   }
@@ -34,24 +33,25 @@
     }
   }
 
-  background: linear-gradient(#414951, #000000);
+  background: linear-gradient(var(--text), #000000);
   padding: 80px 20px;
   color: white;
 
-  #cow {
+  img {
     border-radius: $br;
     width: 100%;
+    box-shadow: $shadow;
   }
 }
 
-.truthtext {
+.truth-text {
   @media ($mobile) {
     text-align: center;
     order: -1;
   }
 }
 
-.more {
+.more-section {
   @media ($mobile) {
     padding: 30px 20px;
   }
@@ -65,7 +65,7 @@
   flex-direction: column;
   place-items: center;
   text-align: center;
-  background: #3f4952;
+  background: var(--active);
   color: white;
   font-size: 20px;
   padding-top: 40px;
@@ -79,7 +79,7 @@
     margin: 0px;
   }
 }
-.grid-2 {
+.about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;

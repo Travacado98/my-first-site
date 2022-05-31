@@ -365,6 +365,9 @@ body {
   background-color: var(--milk);
   line-height: 1.5;
   padding-top: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 strong {
@@ -451,6 +454,19 @@ textarea ::placeholder {
 input,
 select {
   height: 60px;
+}
+
+select {
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: 50%;
 }
 
 textarea {
@@ -649,6 +665,11 @@ footer img {
 .info-section img {
   width: 100%;
 }
+@media (max-width:900px) {
+  .info-section img {
+    max-width: 200px;
+  }
+}
 
 .email-section {
   color: var(--milk);
@@ -687,63 +708,62 @@ footer img {
   }
 }
 
-.shoppy {
+.shop-hero {
   position: relative;
   padding: 80px;
 }
 @media (max-width:600px) {
-  .shoppy {
+  .shop-hero {
     padding: 40px;
   }
 }
-.shoppy .milkback {
+.shop-hero::before, .shop-hero::after {
+  content: "";
+  display: block;
   left: 0;
   top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.shop-hero::before {
   filter: blur(5px);
   background-attachment: fixed;
   background-size: cover;
   background-image: url(../images/milkbackground.png);
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
-.shoppy .blackback {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.shop-hero::after {
   background-color: rgba(63, 73, 82, 0.5);
 }
-.shoppy .shoppytext {
+.shop-hero > div {
   position: relative;
   z-index: 1;
   color: white;
   display: grid;
   place-items: center;
 }
-.shoppy .shoppytext h1 {
+.shop-hero > div h1 {
   font-size: 50px;
   margin: 0px;
 }
 @media (max-width:600px) {
-  .shoppy .shoppytext h1 {
+  .shop-hero > div h1 {
     text-align: center;
     font-size: 40px;
   }
 }
-.shoppy .shoppytext p {
+.shop-hero > div p {
   width: 600px;
   text-align: center;
 }
 @media (max-width:600px) {
-  .shoppy .shoppytext p {
+  .shop-hero > div p {
     width: 100%;
     margin-bottom: 0px;
   }
 }
 
-.shopflavors {
+.shop-body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 40px;
@@ -751,18 +771,18 @@ footer img {
   padding-bottom: 60px;
 }
 @media (max-width:600px) {
-  .shopflavors {
+  .shop-body {
     grid-template-columns: 1fr;
     padding-top: 30px;
   }
 }
-.shopflavors .note {
+.shop-body .note {
   position: sticky;
   top: 120px;
   align-self: start;
 }
 @media (max-width:600px) {
-  .shopflavors .note {
+  .shop-body .note {
     padding: 10px 12px;
     position: static;
     top: 0px;
@@ -771,17 +791,17 @@ footer img {
   }
 }
 
-.milked {
+.flavors-list {
   display: grid;
   gap: 40px;
   grid-template-rows: 1fr;
 }
 @media (max-width:600px) {
-  .milked {
+  .flavors-list {
     padding-bottom: 30px;
   }
 }
-.milked .mflavors {
+.flavors-list .flavor {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -791,168 +811,152 @@ footer img {
   line-height: 1;
 }
 @media (max-width:600px) {
-  .milked .mflavors {
+  .flavors-list .flavor {
     display: block;
     padding: 20px;
   }
 }
-.milked .flavtext {
+.flavors-list .text-wrapper {
   padding: 0 40px;
   line-height: 1.2;
 }
 @media (max-width:600px) {
-  .milked .flavtext {
+  .flavors-list .text-wrapper {
     text-align: center;
     padding: 0 20px;
   }
 }
-.milked .buy {
+.flavors-list .buy {
   filter: grayscale(1);
 }
 @media (max-width:600px) {
-  .milked .buy {
+  .flavors-list .buy {
     width: 100%;
     margin-bottom: 10px;
     margin-top: 30px;
   }
 }
-.milked img {
+.flavors-list img {
   padding: 106px 40px;
   border-radius: 15px 0 0 15px;
 }
 @media (max-width:600px) {
-  .milked img {
+  .flavors-list img {
     display: none;
   }
 }
-.milked .image-wrapper {
+.flavors-list .image-wrapper {
   line-height: 1;
   border-radius: 15px 0 0 15px;
 }
-.milked #fire {
+.flavors-list #fire {
   background-color: #fff0e3;
 }
-.milked #ice {
+.flavors-list #ice {
   background-color: #eafaff;
 }
-.milked #recycle {
+.flavors-list #recycle {
   background-color: #f0ffef;
 }
 
-#shoplabel {
+#label {
   font-size: 16px;
   color: #b4b4b4;
 }
 @media (max-width:600px) {
-  #shoplabel {
+  #label {
     font-size: 14px;
     margin: 0px;
     padding-bottom: 10px;
   }
 }
 
-#recyclegrid {
+#recycle-container {
   display: flex;
   width: 100%;
   align-items: center;
   gap: 8px;
 }
 @media (max-width:600px) {
-  #recyclegrid {
+  #recycle-container {
     flex-direction: column;
   }
 }
 
-#hotshop {
-  color: #ff7917;
-}
-
-#coldshop {
-  color: #3ba7c7;
-}
-
-#recycleshop {
-  color: #72a03f;
-}
-@media (max-width:600px) {
-  #recycleshop {
-    margin: 0px;
-  }
-}
-
-.intromilk {
+.about-hero {
   padding: 80px 20px;
 }
 @media (max-width:600px) {
-  .intromilk {
+  .about-hero {
     padding-top: 20px;
     padding-bottom: 30px;
     text-align: center;
   }
 }
-
-.aboutmilk img {
+.about-hero img {
   max-height: 420px;
   width: 100%;
   border-radius: 15px;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
-.milktext {
+.about-text {
   justify-content: center;
   align-items: center;
   max-width: 620px;
 }
 
-.truth {
-  background: linear-gradient(#414951, #000000);
+.truth-section {
+  background: linear-gradient(var(--text), #000000);
   padding: 80px 20px;
   color: white;
 }
 @media (max-width:600px) {
-  .truth {
+  .truth-section {
     padding: 40px 20px;
   }
 }
 @media (max-width:600px) {
-  .truth h1 {
+  .truth-section h1 {
     margin-top: 0px;
     text-align: center;
   }
 }
-.truth #cow {
+.truth-section img {
   border-radius: 15px;
   width: 100%;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
 @media (max-width:600px) {
-  .truthtext {
+  .truth-text {
     text-align: center;
     order: -1;
   }
 }
 
-.more {
+.more-section {
   display: flex;
   flex-direction: column;
   place-items: center;
   text-align: center;
-  background: #3f4952;
+  background: var(--active);
   color: white;
   font-size: 20px;
   padding-top: 40px;
   padding-bottom: 80px;
 }
 @media (max-width:600px) {
-  .more {
+  .more-section {
     padding: 30px 20px;
   }
 }
 @media (max-width:600px) {
-  .more h1 {
+  .more-section h1 {
     margin-top: 15px;
   }
 }
-.more p {
+.more-section p {
   max-width: 600px;
   width: 100%;
   text-align: center;
@@ -960,55 +964,83 @@ footer img {
   margin: 0px;
 }
 
-.grid-2 {
+.about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
 }
 @media (max-width:600px) {
-  .grid-2 {
+  .about-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 }
 
-#contactin {
+.contact-section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width:600px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width:600px) {
+  .contact-section img {
+    display: none;
+  }
+}
+
+.contact-form {
   color: var(--milk);
   font-family: Poppins;
   background-color: var(--text);
   display: flex;
   flex-direction: column;
-  place-items: center;
-  padding: 80px 60px 0px 60px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px;
   margin: 0px;
   width: 100%;
 }
 @media (max-width:600px) {
-  #contactin {
-    padding: 30px 30px;
+  .contact-form {
+    padding: 20px;
   }
 }
-#contactin p {
+@media (max-width:900px) {
+  .contact-form {
+    padding: 40px;
+  }
+}
+.contact-form p {
   font-weight: 200;
 }
 @media (max-width:600px) {
-  #contactin p {
+  .contact-form p {
     font-size: 14px;
     text-align: center;
   }
 }
-#contactin h2 {
+.contact-form h2 {
   text-align: center;
   margin: 0px;
   font-size: 42px;
   width: 100%;
 }
 @media (max-width:600px) {
-  #contactin h2 {
+  .contact-form h2 {
     font-size: 30px;
   }
 }
-#contactin #contactform {
+.contact-form form {
   padding-top: 10px;
   display: grid;
   width: 100%;
@@ -1016,34 +1048,14 @@ footer img {
   max-width: 600px;
 }
 @media (max-width:600px) {
-  #contactin #contactform {
+  .contact-form form {
     padding-bottom: 20px;
   }
 }
-#contactin button {
+.contact-form button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-@media (max-width:600px) {
-  .contact {
-    grid-template-columns: 1fr;
-  }
-}
-.contact img {
-  width: 100%;
-  height: 750px;
-  object-fit: cover;
-}
-@media (max-width:600px) {
-  .contact img {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=mystyles.css.map */

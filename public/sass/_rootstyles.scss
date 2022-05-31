@@ -18,6 +18,9 @@ body {
   background-color: var(--milk);
   line-height: 1.5;
   padding-top: $header-height;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 strong {
